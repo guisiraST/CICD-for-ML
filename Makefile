@@ -17,6 +17,7 @@ eval:
 hf-login:
 	git pull origin main
 	git switch main
+	git config --global credential.helper store
 	pip install -U "huggingface_hub[cli]"
 	huggingface-cli login --token $(HF) --add-to-git-credential
 
