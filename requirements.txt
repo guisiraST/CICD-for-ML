@@ -3,3 +3,4 @@ skops
 pandas
 black
 matplotlib
+gradio
