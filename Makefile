@@ -15,8 +15,8 @@ eval:
 	cml comment create report.md
 
 hf-login:
-	git pull origin update
-	git switch update
+	git pull origin main
+	git switch main
 	pip install -U "huggingface_hub[cli]"
 	huggingface-cli login --token $(HF) --add-to-git-credential
 
